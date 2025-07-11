@@ -29,7 +29,7 @@ export default function Hero(){
         <small>* The first and second set should be at 75% and 85% of you working weight used to the last two sets</small>
 
         <h3>The Training Plan</h3>
-        <p>This traing program uses a structure known as the <b>Bro</b>Splite and follows this rotation ⬇️</p>
+        <p>This traing program uses a structure known as the <b>Bro</b> Splite and follows this rotation ⬇️</p>
         <b><i>Push &rarr;Pull &rarr;Legs&rarr;Repeat</i></b>
         <p>Complete all of the workouts below and track your progress along the way ✅</p>
 
