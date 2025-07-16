@@ -14,7 +14,7 @@ export default function Grid(){
                 'Pull':
                 'Legs'
 
-                const trainingPlan = training_plan[workoutIndex];
+                // const trainingPlan = training_plan[workoutIndex];
 
                 if(workoutIndex===selectedWorkout){
                     return(
