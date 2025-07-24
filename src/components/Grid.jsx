@@ -9,40 +9,43 @@ export default function Grid(){
         <div className="training-plan-grid">
             {Object.keys(training_plan).map((workout,workoutIndex)=>{
                 // isLocked is a constant to that user cannot open another workout without complwting prior one
-                const type = workoutIndex %3===0?'Push':
+                const type = workoutIndex %3===0?
+                'Push':
                 workoutIndex %3===1?
                 'Pull':
                 'Legs'
 
-                // const trainingPlan = training_plan[workoutIndex];
-
-                if(workoutIndex===selectedWorkout){
-                    return(
-                        <WorkoutCard key={workoutIndex} />
-                    )
-                }
-               return(
-                // when we use this mapping to return a lot of item we need to give the top return element a unique key,hence workoutIndex
-                <button className={'card plan-card '+(isLocked?'inactive':'')} key={workoutIndex}>
-                    <div className="plan-card-header">
-                        <p>Day {((workoutIndex /8 )<= 1)?'0'+(workoutIndex+1):workoutIndex+1}</p>
-                    </div>
-
-{/* her we checked the condition of locked workout and if not locked which icon to display */}
-                    {isLocked ? (
-                        <i className="fa-solid fa-lock"></i>
-                    ):(
-                        workoutIndex % 3 === 0)?(
+                const trainingPlan = training_plan[workoutIndex];
+                const dayNum=((workoutIndex /8 )<= 1)?
+                              '0'+(workoutIndex+1):workoutIndex+1
+                const icon= (workoutIndex % 3 === 0)?(
                             <i className="fa-solid fa-dumbbell"></i>
                         ):(
                             workoutIndex % 3 === 1?(
                             <i className ="fa-solid fa-weight-hanging"></i>
                         ):(
                             <i className ="fa-solid fa-bolt"></i>
-                        )
-                        )
-                    }
+                        ))           
 
+                if(workoutIndex===selectedWorkout){
+                    return(
+                        <WorkoutCard key={workoutIndex} trainingPlan={trainingPlan}
+                        dayNum={dayNum} icon={icon} workoutIndex={workoutIndex} type={type} />
+                    )
+                    // since we are maping we still need to give the key
+                }
+               return(
+                // when we use this mapping to return a lot of item we need to give the top return element a unique key,hence workoutIndex
+                <button className={'card plan-card '+(isLocked?'inactive':'')} key={workoutIndex}>
+                    <div className="plan-card-header">
+                        <p>Day {dayNum}</p>
+                    </div>
+
+{/* her we checked the condition of locked workout and if not locked which icon to display */}
+                    {isLocked ? (
+                        <i className="fa-solid fa-lock"></i>
+                    ):(icon)
+                    }
                     <div className="plan-card-header">
                         <h4>
                             <b> {type}</b>
