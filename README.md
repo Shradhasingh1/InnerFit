@@ -20,10 +20,10 @@ focused on progressive overload with weights. Designed for consistency and disci
 ## 📸 Preview
 
 ### 💻 Desktop View
-![InnerFit Desktop Screenshot](public/screenshots/Desktop.png)
+![InnerFit Desktop Screenshot](./public/screenshots/Desktop.png)
 
 ### 📱 Mobile View
-![InnerFit Mobile Screenshot](public/screenshots/Mobile.png)
+![InnerFit Mobile Screenshot](./public/screenshots/Mobile.png)
 
 > The app is fully responsive and works seamlessly across all screen sizes.
 
