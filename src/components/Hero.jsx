@@ -2,7 +2,7 @@ export default function Hero(){
     return(
         <>
         <h5>Complete this strength training program if you want to...</h5>
-        <ol>
+        <ol className="benefits-list">
             <li>
                 Follow a simple program with guaranted results.
             </li>
@@ -12,18 +12,18 @@ export default function Hero(){
         </ol>
         <h3>The Rules</h3>
         <p>To complete this program, you <b>MUST</b> follow these 3 simple rules:</p>
-        <ul>
-             <div>
+        <ul className="rules-list">
+             <div className="rule-item">
                 <b>Rest</b>
                 <p>Ensure that you are taking rest days when necessary</p>
             </div>
-            <div>
+            <div className="rule-item">
                 <b>Reps</b>
                 <p>Every rep is a pause repition following a <abbr title="2 second down-2 second pause-2 second up">2-2-2</abbr>temp</p>
             </div>
-            <div>
+            <div className="rule-item">
                 <b>Weight*</b>
-                <p>Select the maximu, weight that allows you to complete the set with good form</p>
+                <p>Select the maximum, weight that allows you to complete the set with good form</p>
             </div>
         </ul>
         <small>* The first and second set should be at 75% and 85% of you working weight used to the last two sets</small>
