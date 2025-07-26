@@ -31,7 +31,7 @@ focused on progressive overload with weights. Designed for consistency and disci
 
 ## 🚀 Live Demo
 Check out the live version here:  
-👉 [InnerFit Live App](https://your-deployment-link.com)
+👉 [InnerFit Live App](https://innerfit.netlify.app/)
 
 ---
 
